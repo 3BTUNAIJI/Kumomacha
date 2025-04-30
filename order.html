@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Kumomacha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="order.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Kumomacha</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section>
+            <h2>Order Your Matcha</h2>
+            <p>Select the quantity of premium Kumomacha you’d like to order:</p>
+            <div class="order-form">
+                <label for="quantity">Quantity (kg):</label>
+                <div class="quantity-controls">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQty()">+</button>
+                </div>
+                <a id="whatsappLink" class="order-button" href="#" target="_blank">Order via WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Kumomacha. All rights reserved.
+    </footer>
+</body>
+</html>
